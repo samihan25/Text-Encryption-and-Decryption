@@ -50,22 +50,30 @@
 
 				<div class="wrap-input100 validate-input" data-validate = "Message is required">
 					<span class="label-input100">Message:</span>
-					<textarea class="input100" name="message" placeholder="Enter Message here..."></textarea>
+					<input type="text" class="input100" name="message" placeholder="Enter Message here..." pattern="^[A-Za-z0-9-./:;<=>?@[\\/\]^_`{|}]+$">
 					<span class="focus-input100"></span>
 				</div>
+				<span class="input100"><small>Allowed characters:- Alphanumeric and -./:;<=>?@[\]^_`{|}</small></span>
+
+				<p><br></p>
 
                 <div class="wrap-input100 validate-input" data-validate="Key is required">
 					<span class="label-input100">Key:</span>
-					<input class="input100" type="text" name="key" placeholder="Enter key">
+					<input type="text" class="input100" name="key" placeholder="Enter key" pattern="^[A-Za-z0-9-./:;<=>?@[\\/\]^_`{|}]+$">
 					<span class="focus-input100"></span>
 				</div>
+				<span class="input100"><small>Allowed characters:- Alphanumeric and -./:;<=>?@[\]^_`{|}</small></span>
 
-				<select name="option">
-                  <option value="encrypt">Encrypt</option>
-                  <option value="decrypt">Decrypt</option>
-                </select>
+                <p><br></p>
 
-                <br/>
+                <div class="input100">
+    				<select name="option">
+                      <option value="encrypt">Encrypt</option>
+                      <option value="decrypt">Decrypt</option>
+                    </select>
+                </div>
+
+                <p><br></p>
 
 				<div class="container-contact100-form-btn">
 					<button class="contact100-form-btn">
